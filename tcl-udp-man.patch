@@ -1,0 +1,18 @@
+diff -ur tcludp.org/doc/udp.n tcludp/doc/udp.n
+--- tcludp.org/doc/udp.n	2014-08-24 10:14:50.000000000 +0200
++++ tcludp/doc/udp.n	2016-08-14 13:45:34.285455792 +0200
+@@ -2,7 +2,6 @@
+ '\" Generated from file './doc/udp.man' by tcllib/doctools with format 'nroff'
+ '\" Copyright (c) 1999-2000 Columbia University; all rights reserved
+ '\"
+-.so man.macros
+ .TH "udp" n 1.0.11  "Tcl UDP extension"
+ .BS
+ .SH NAME
+@@ -205,4 +204,4 @@
+ .nf
+ Copyright (c) 1999-2000 Columbia University; all rights reserved
+ 
+-.fi
+\ Brak znaku nowej linii na końcu pliku
++.fi

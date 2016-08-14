@@ -1,11 +1,12 @@
 Summary:	Create UDP sockets in Tcl
 Name:		tcl-udp
-Version:	1.0.8
+Version:	1.0.11
 Release:	1
 License:	distributable
 Group:		Development/Languages/Tcl
 Source0:	http://dl.sourceforge.net/tcludp/tcludp-%{version}.tar.gz
-# Source0-md5:	60dd3a553fc8e579ecfd6622252da2d2
+# Source0-md5:	945ea7afd1df9e46090733ffbfd724a1
+Patch0:		%{name}-man.patch
 URL:		http://tcludp.sourceforge.net/
 BuildRequires:	tcl-devel >= 8.4.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -15,7 +16,8 @@ The Tcl UDP extension provides a simple library to support UDP socket
 in Tcl.
 
 %prep
-%setup -q -n tcludp-%{version}
+%setup -q -n tcludp
+%patch0 -p1
 
 %build
 %configure \
