@@ -4,7 +4,7 @@ Version:	1.0.11
 Release:	1
 License:	distributable
 Group:		Development/Languages/Tcl
-Source0:	http://dl.sourceforge.net/tcludp/tcludp-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/tcludp/tcludp-%{version}.tar.gz
 # Source0-md5:	945ea7afd1df9e46090733ffbfd724a1
 Patch0:		%{name}-man.patch
 URL:		http://tcludp.sourceforge.net/
