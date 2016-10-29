@@ -7,6 +7,7 @@ Group:		Development/Languages/Tcl
 Source0:	http://downloads.sourceforge.net/tcludp/tcludp-%{version}.tar.gz
 # Source0-md5:	945ea7afd1df9e46090733ffbfd724a1
 Patch0:		%{name}-man.patch
+Patch1:		no-m64.patch
 URL:		http://tcludp.sourceforge.net/
 BuildRequires:	tcl-devel >= 8.4.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -18,8 +19,11 @@ in Tcl.
 %prep
 %setup -q -n tcludp
 %patch0 -p1
+%patch1 -p1
 
 %build
+%{__aclocal}
+%{__autoconf}
 %configure \
 	--enable-64bit
 %{__make}
